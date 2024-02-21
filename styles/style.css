@@ -1,0 +1,354 @@
+h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter";
+    margin: 0;
+    background-color: #1e1e1e;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px 20px;
+    width: 360px;
+    height: 132px;
+}
+
+.header__logo-image {
+    width: 78.45px;
+    height: 15.43px;
+}
+
+.header__menu {
+    display: flex;
+    height: 100%;
+    margin-left: auto; 
+}
+
+.header__menu-list {
+    display: flex;
+    list-style: none;
+    flex-direction: column; 
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.header__menu-link {
+    color:white;
+}
+
+.content-section {
+    width: 360px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.content-section_theme_dark {
+    background-color: #131313;
+    color: white;
+}
+
+.content-section_theme_bright {
+    background-color: #FEE42A;
+    color: black;
+}
+
+.cover {
+    background-image: url(../images/cover.svg);
+    background-repeat: no-repeat;
+    background-position: 22px 35px;
+    background-size: 96% auto;
+}
+
+.cover_title {
+    position: relative;
+    height: 238px;
+}
+
+.accent-span {
+    position: absolute;
+    width: 52px;
+    height: 72px;
+    left: 20px;
+    top: 7px;
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 100%;
+    text-align: center;
+}
+
+.text-center {
+    position: absolute;
+    width: 226px;
+    height: 72px;
+    left: 42px;
+    top: 72px;
+}
+
+.text-right {
+    position: absolute;
+    width: 161px;
+    height: 72px;
+    left: 154px;
+    top: 145px;
+}
+
+.intro {
+    height: 519px;
+    padding: 30px 20px 38px 20px;
+}
+
+.intro__heading {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+} /*заголовок*/
+
+.intro__title {
+    margin: 0 auto;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+}
+
+.intro__date {
+    width: 203px;
+    height: 38px;
+}
+
+.intro__main-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 24px;
+    gap: 24px;
+    line-height: 21.5px;
+}
+
+.reason {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 1368px;
+    padding: 40px 20px;
+    gap: 32px;
+}
+
+.accent-span1 {
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.1;
+}
+
+.text-right1 {
+    padding-left: 76.69px;
+}
+
+.content-section__introduction {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.35;
+}
+
+.content-section__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding-left: 17px;
+}
+
+.content-section__list-item {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.content-section__list-accent {
+    font-family: 'Interbold';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.how-to {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 1850px;
+    padding: 40px 20px;
+    gap: 32px;
+}
+
+.accent-span1 {
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.14;
+}
+
+.text-right1 {
+    justify-content: flex-end;
+}
+
+.content-section__introduction {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.35;
+}
+
+.card_theme_dark {
+    background: #343434;
+    color: #f5f5f5;
+    border-radius: 30px; /*закругление*/
+}
+
+.card_theme_bright {
+    background: #FEE42A;
+    color: #131313;
+    border-radius: 30px; /*закругление*/
+}
+
+.card-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 8px;
+    width: 279px;
+    height: 455px;
+}
+
+.card__author {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 163px;
+    height: 128px;
+}
+
+.card__author-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.card__author-name {
+    width: 163px;
+    height: 20px;
+    font-family: 'Interbold';
+    font-size: 16px;
+    line-height: 135%;
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 279px;
+    height: 319px;
+}
+
+.card__title {
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 135%;
+}
+
+.card__text {
+    width: 279px;
+    height: 282px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21.5px;
+}
+
+.card_text-only {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 8px;
+    width: 279px;
+    height: 328px;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 8px;
+    width: 279px;
+    height: 519px;
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-top: solid #FEE42A 1px;
+    position: relative;
+    width: 360px;
+    height: 62px;
+}
+
+.footer__copy {
+    width: 92px;
+    height: 22px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 73px;
+    height: 18px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 125%;
+}
