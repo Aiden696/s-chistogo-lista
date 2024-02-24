@@ -4,29 +4,28 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
 }
 
 body {
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     margin: 0;
     background-color: #1e1e1e;
 }
 
 .header {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-direction: row; 
     padding: 24px 20px;
-    width: 360px;
-    height: 132px;
 }
 
 .header__logo-image {
     width: 78.45px;
-    height: 15.43px;
+    height: 17px;
 }
 
 .header__menu {
     display: flex;
     height: 100%;
     margin-left: auto;
+    height: 84px;
+    width: 75px;
 }
 
 .header__menu-list {
@@ -34,10 +33,14 @@ body {
     list-style: none;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
+    gap: 13px;
 }
 
 .header__menu-link {
+    color:white;
+}
+
+.header__menu-item_active {
     color:white;
 }
 
@@ -49,58 +52,47 @@ body {
 
 .content-section_theme_dark {
     background-color: #131313;
-    color: white;
+    color: #f5f5f5
 }
 
 .content-section_theme_bright {
     background-color: #FEE42A;
-    color: black;
+    color: #131313;
 }
 
 .cover {
     background-image: url(../images/cover.svg);
     background-repeat: no-repeat;
-    background-position: 22px 35px;
-    background-size: 96% auto;
+    background-position: 19px 29px;
+    background-size: 95% auto;
+    padding-top: 8px;
+    padding-bottom: 38px;
 }
 
 .cover_title {
-    position: relative;
-    height: 238px;
+    padding-left: 20px;
+    padding-right: 22px;
+    padding-bottom: 5px;
+    font-size: 72px;
+    line-height: 72px;
+    font-weight: 400;
+    font-family: 'EB Garamond', sans-serif;
+    font-style: normal;
 }
 
 .accent-span {
-    position: absolute;
-    width: 52px;
-    height: 72px;
-    left: 20px;
-    top: 7px;
-    font-family: 'EB Garamond';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 72px;
-    line-height: 100%;
-    text-align: center;
+    display: block;
 }
 
 .text-center {
-    position: absolute;
-    width: 226px;
-    height: 72px;
-    left: 42px;
-    top: 72px;
+    text-align: center;
 }
 
 .text-right {
-    position: absolute;
-    width: 161px;
-    height: 72px;
-    left: 154px;
-    top: 145px;
+    text-align: end;
 }
 
 .intro {
-    height: 519px;
     padding: 30px 20px 38px 20px;
 }
 
@@ -108,12 +100,13 @@ body {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 8px;
+    gap: 4px;
+    color: #CCCCCC;;
 } /*заголовок*/
 
 .intro__title {
     margin: 0 auto;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -121,8 +114,7 @@ body {
 }
 
 .intro__date {
-    width: 203px;
-    height: 38px;
+    white-space: nowrap;
 }
 
 .intro__main-text {
@@ -130,33 +122,30 @@ body {
     flex-direction: column;
     align-items: flex-start;
     padding-top: 24px;
-    gap: 24px;
+    gap: 26px;
     line-height: 21.5px;
 }
 
 .reason {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    height: 1368px;
-    padding: 40px 20px;
+    padding-top: 35px;
+    padding-left: 20px;
+    padding-bottom: 45px;
+    padding-right: 20px;
     gap: 32px;
 }
 
-.accent-span1 {
-    font-family: 'EB Garamond';
+.content-section__subtitle{
+    font-family: 'EB Garamond', sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 28px;
-    line-height: 1.1;
-}
-
-.text-right1 {
-    padding-left: 76.69px;
+    line-height: 33px;
 }
 
 .content-section__introduction {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -168,49 +157,45 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
-    padding-left: 17px;
+    padding-left: 16px;
+    padding-right: 2px;
+    line-height: 21.6px;
 }
 
 .content-section__list-item {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
-    line-height: 22px;
 }
 
 .content-section__list-accent {
-    font-family: 'Interbold';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .how-to {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    height: 1850px;
-    padding: 40px 20px;
-    gap: 32px;
+    padding: 40px 20px 23px;
+    gap: 30.6px;
 }
 
 .card_theme_dark {
     background: #343434;
     color: #f5f5f5;
-    border-radius: 30px; /*закругление*/
+/*закругление*/
 }
 
 .card_theme_bright {
     background: #FEE42A;
     color: #131313;
-    border-radius: 30px; /*закругление*/
+/*закругление*/
 }
 
 .card-list {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 32px;
+    gap: 34px;
 }
 
 .card {
@@ -219,8 +204,7 @@ body {
     align-items: flex-start;
     padding: 20px;
     gap: 8px;
-    width: 279px;
-    height: 455px;
+    border-radius: 30px;
 }
 
 .card__author {
@@ -229,8 +213,6 @@ body {
     align-items: flex-start;
     padding: 0px;
     gap: 8px;
-    width: 163px;
-    height: 128px;
 }
 
 .card__author-photo {
@@ -242,7 +224,8 @@ body {
 .card__author-name {
     width: 163px;
     height: 20px;
-    font-family: 'Interbold';
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
     font-size: 16px;
     line-height: 135%;
 }
@@ -251,14 +234,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
     gap: 8px;
-    width: 279px;
-    height: 319px;
 }
 
 .card__title {
-    font-family: 'EB Garamond';
+    font-family: 'EB Garamond', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 22px;
@@ -266,13 +246,11 @@ body {
 }
 
 .card__text {
-    width: 279px;
-    height: 282px;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
     line-height: 21.5px;
+    padding-right: 2px;
 }
 
 .card_text-only {
@@ -281,54 +259,34 @@ body {
     align-items: flex-start;
     padding: 20px;
     gap: 8px;
-    width: 279px;
-    height: 328px;
 }
-
-.card1 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
-    gap: 8px;
-    width: 279px;
-    height: 519px;
-}
-
 
 .footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     padding: 20px;
     border-top: solid #FEE42A 1px;
-    position: relative;
-    width: 360px;
-    height: 62px;
+    color: white;
 }
 
 .footer__copy {
-    width: 92px;
-    height: 22px;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 135%;
+    color: white;
+    text-decoration: none;
 }
 
 .footer__links {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
     gap: 16px;
-    width: 73px;
-    height: 18px;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 125%;
+    color:white;
+    text-decoration: none;
 }
