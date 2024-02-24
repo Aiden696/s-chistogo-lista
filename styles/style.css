@@ -11,7 +11,7 @@ body {
 
 .header {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     padding: 24px 20px;
 }
 
@@ -22,7 +22,6 @@ body {
 
 .header__menu {
     display: flex;
-    height: 100%;
     margin-left: auto;
     height: 84px;
     width: 75px;
@@ -66,12 +65,12 @@ body {
     background-position: 19px 29px;
     background-size: 95% auto;
     padding-top: 8px;
-    padding-bottom: 38px;
+    padding-bottom: 40px;
 }
 
 .cover_title {
     padding-left: 20px;
-    padding-right: 22px;
+    padding-right: 23px;
     padding-bottom: 5px;
     font-size: 72px;
     line-height: 72px;
@@ -123,25 +122,26 @@ body {
     align-items: flex-start;
     padding-top: 24px;
     gap: 26px;
-    line-height: 21.5px;
+    line-height: 21.4px;
 }
 
 .reason {
     display: flex;
     flex-direction: column;
-    padding-top: 35px;
+    padding-top: 31px;
     padding-left: 20px;
     padding-bottom: 45px;
     padding-right: 20px;
     gap: 32px;
 }
 
-.content-section__subtitle{
+.content-section__subtitle {
     font-family: 'EB Garamond', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 28px;
     line-height: 33px;
+
 }
 
 .content-section__introduction {
@@ -176,7 +176,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 40px 20px 23px;
-    gap: 30.6px;
+    gap: 32px;
 }
 
 .card_theme_dark {
